@@ -59,3 +59,75 @@ Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
 Processing PagesController#contact (for 127.0.0.1 at 2010-07-29 10:31:50) [GET]
 Rendering pages/contact
 Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-07-29 15:55:59) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+
+ActionView::TemplateError (undefined local variable or method `media' for #<ActionView::Base:0xb6b7c378>) on line #6 of app/views/layouts/application.html.erb:
+3: <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+4:   <head>
+5:     <title><%= title %></title>
+6:     <%= stylesheet_link_tag 'blueprint/screen', media => 'screen' %> 
+7:     <%= stylesheet_link_tag 'blueprint/print', media => 'print' %>
+8:   </head>
+9:   <body>
+
+    app/views/layouts/application.html.erb:6
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-07-29 15:56:19) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+
+ActionView::TemplateError (undefined local variable or method `media' for #<ActionView::Base:0xb6ce4828>) on line #6 of app/views/layouts/application.html.erb:
+3: <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+4:   <head>
+5:     <title><%= title %></title>
+6:     <%= stylesheet_link_tag 'blueprint/screen', media => 'screen' %> 
+7:     <%= stylesheet_link_tag 'blueprint/print', media => 'print' %>
+8:   </head>
+9:   <body>
+
+    app/views/layouts/application.html.erb:6
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (22.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-07-29 15:57:07) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-07-29 15:57:18) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/help]
