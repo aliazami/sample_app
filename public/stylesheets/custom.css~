@@ -81,7 +81,7 @@ ul.navigation {
 
 /* Sign up button */
 
-.signup_button {
+.myss {
   margin-left: auto;
   margin-right: auto;
   display: block;
