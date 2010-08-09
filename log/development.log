@@ -2707,3 +2707,469 @@ Rendered layouts/_stylesheets (0.5ms)
 Rendered layouts/_header (0.4ms)
 Rendered layouts/_myfooter (0.3ms)
 Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/users/1]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'example@railstutorial.org') LIMIT 1[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-08 10:50:15) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-08 10:50:24) [GET]
+
+ActionController::RoutingError (No route matches "/user/new" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-08 10:51:22) [GET]
+
+ActionController::RoutingError (No route matches "/user/new" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-08 10:52:29) [GET]
+
+ActionController::RoutingError (No route matches "/user/" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-08 10:52:32) [GET]
+
+ActionController::RoutingError (No route matches "/user/" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-08 10:52:37) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-08-08 10:52:40) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-08-08 10:56:23) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 11:56:07) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"", "password"=>"", "email"=>""}}
+  [4;36;1mUser Exists (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 45ms (View: 12, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 11:56:34) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"ali", "password"=>"", "email"=>""}}
+  [4;35;1mUser Exists (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 11:56:46) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"ali", "password"=>"", "email"=>"ali@server"}}
+  [4;36;1mUser Exists (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 100ms (View: 3, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 11:56:59) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"ali", "password"=>"", "email"=>"ali@server.uk"}}
+  [4;35;1mUser Exists (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server.uk') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 11:57:11) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"ali", "password"=>"123856", "email"=>"ali@server.uk"}}
+  [4;36;1mUser Exists (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server.uk') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('ali', '1e06060f00674d90e18652ef4655fa78944fe750686ae228133620895fecd631', 'd587b619c48fdffb3b6aed44d8de2e43a79363acbdcb6921fb9c25de23db8aa4', '2010-08-08 07:27:11', '2010-08-08 07:27:11', 'ali@server.uk')[0m
+
+ActionView::MissingTemplate (Missing template users/create.erb in view path app/views):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 11:57:34) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"ali", "password"=>"vopi;ffgdfg", "email"=>"ali@server.uk"}}
+  [4;36;1mUser Exists (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server.uk') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 11:58:59) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"ali", "password"=>"", "email"=>"ali@server.uke"}}
+  [4;35;1mUser Exists (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server.uke') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 11:59:05) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"", "password"=>"", "email"=>"ali@server.uke"}}
+  [4;36;1mUser Exists (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server.uke') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 53ms (View: 46, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 12:01:15) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"reter", "password"=>"dsfgdfsgdfsgdfsgdfgdfg", "email"=>"ali@server.ukeg"}}
+  [4;35;1mUser Exists (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server.ukeg') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('reter', '51ae931f3dffc7b93faa77db1988531a24c8fd350d8b33d3d205784888e0c0b5', '315665812742d474a84b7b250b7bf7d62854f34a3c5bfb1a9df798b7a2cab46f', '2010-08-08 07:31:15', '2010-08-08 07:31:15', 'ali@server.ukeg')[0m
+
+ActionView::MissingTemplate (Missing template users/create.erb in view path app/views):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@here.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@here.com') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 12:08:57) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"reter", "password"=>"123", "email"=>"ali@server4.ukeg"}}
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server4.ukeg') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 102ms (View: 14, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 12:09:07) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"reter", "password"=>"123", "email"=>"ali@server4.ukeg"}}
+  [4;35;1mUser Exists (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server4.ukeg') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 12:10:12) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"reter", "password"=>"123", "email"=>"ali@server4.ukeg"}}
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server4.ukeg') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_myfooter (0.4ms)
+Completed in 95ms (View: 12, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 12:10:24) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "user"=>{"name"=>"reter", "password_confirmation"=>"4465529965", "password"=>"123556322563", "email"=>"ali@server4.ukeg"}}
+  [4;35;1mUser Exists (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server4.ukeg') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 12:59:44) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "controller"=>"users", "user"=>{"name"=>"reter", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ali@server4.ukeg"}}
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server4.ukeg') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 106ms (View: 13, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-08 12:59:59) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "controller"=>"users", "user"=>{"name"=>"reter", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ali@server4.ukeg"}}
+  [4;35;1mUser Exists (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ali@server4.ukeg') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('reter', 'b5414445b7c3e8c8cc915e501ef734b546a718b18f4b82f50a93780770a238e9', '6696096a26e85ad42e81258a9c73ef6933255bcd35091c261c32d316ba8c090d', '2010-08-08 08:29:59', '2010-08-08 08:29:59', 'ali@server4.ukeg')[0m
+Redirected to http://localhost:3000/users/4
+Completed in 72ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-08 12:59:59) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 49ms (View: 44, DB: 0) | 200 OK [http://localhost/users/4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (69.4ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255)) [0m
+  [4;35;1mSQL (59.2ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (85.2ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (83.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (41.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100804121719')[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100803112140')[0m
+  [4;35;1mSQL (42.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100804092916')[0m
+  [4;36;1mSQL (42.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100802103057')[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-09 11:04:03) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-08-09 11:04:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-09 11:04:41) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "controller"=>"users", "user"=>{"name"=>"user-1", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user-1@rails.com"}}
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user-1@rails.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('user-1', '4d461c75d2d43b59149ef1ea7f79366d56d378bc4a98c9efcc22a69d0b75c0a9', 'a06d581007aa85f417302289feb6b70fd528a6d47e281fd72ebf941cf4d5b32e', '2010-08-09 06:34:41', '2010-08-09 06:34:41', 'user-1@rails.com')[0m
+Redirected to http://localhost:3000/users/1
+Completed in 117ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-09 11:04:41) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-09 11:20:50) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-08-09 11:20:55) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-09 11:21:14) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "controller"=>"users", "user"=>{"name"=>"user-2", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user-2@rails.com"}}
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user-2@rails.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('user-2', '270ecfc0b7f4570a1d996da528034377fbfbaf30d73dc362a084a80d38590f71', '56e4382330c5abdb3589071fef89daa89f3e937064b5bb605b914c31918ef24b', '2010-08-09 06:51:14', '2010-08-09 06:51:14', 'user-2@rails.com')[0m
+Redirected to http://localhost:3000/users/2
+Completed in 117ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-09 11:21:15) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 52ms (View: 4, DB: 0) | 200 OK [http://localhost/users/2]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-09 11:27:08) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-08-09 11:27:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-09 11:27:31) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "controller"=>"users", "user"=>{"name"=>"user-3", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [4;36;1mUser Exists (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-09 11:27:53) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "controller"=>"users", "user"=>{"name"=>"user-3", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user-3@rails.com"}}
+  [4;35;1mUser Exists (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user-3@rails.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('user-3', '817fd93b31544526551b3b6f1b759cb9d840e9e11aac9392b763f854779435ca', 'fbf96232c275907a54ae87e596a7984ccc6dd9269b389f796a9e23c3a0676cd3', '2010-08-09 06:57:53', '2010-08-09 06:57:53', 'user-3@rails.com')[0m
+Redirected to http://localhost:3000/users/3
+Completed in 153ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-09 11:27:54) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/users/3]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-09 11:28:04) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"users"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/users/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
