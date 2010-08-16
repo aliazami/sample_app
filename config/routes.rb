@@ -46,6 +46,9 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => 'pages', :action => 'home'
   map.signup 'signup', :controller => 'users', :action => 'new'
   map.resources :users
+  map.resources :sessions, :only => [:new, :create, :destroy]
+  map.signin '/signin', :controller => 'sessions', :action => 'new'
+  map.signout '/signout', :controller => 'sessions', :action => 'destroy'
   
   
   

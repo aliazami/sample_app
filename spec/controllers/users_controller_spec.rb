@@ -66,8 +66,9 @@ describe UsersController do
 	post :create, :user => @attr
 	response.should render_template('new')
       end
-      
-      describe "success" do
+    end
+
+    describe "success" do
 	before (:each) do
 	  @attr={:name => "username", :email => "user@example.com", :password => "somepassword",
 	         :password_confirmation => "somepassword"}
@@ -82,10 +83,12 @@ describe UsersController do
 	  post :create, :user => @attr
 	  flash[:success].should =~ /welcome to the sample app/i
 	end
-	
+	it "should sign the user in" do
+	  post :create, :user => @attr
+	  controller.should be_signed_in
+	end
       end
       
-    end
     
   end
 end

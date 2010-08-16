@@ -3173,3 +3173,697 @@ Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/users/3]
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-09 14:27:42) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-08-09 14:27:55) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-09 14:27:58) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-08-09 14:28:01) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-09 14:28:03) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-09 14:40:30) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-09 14:41:37) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+
+ActionView::TemplateError (undefined local variable or method `signin' for #<ActionView::Base:0xb6c27ad4>) on line #7 of app/views/layouts/_header.html.erb:
+4:   <ul class="navigation">
+5:     <li><%= link_to "Home", root_path %></li>
+6:     <li><%= link_to "Help", help_path %></li>
+7:     <li><%= link_to "Sign in",signin %></li>
+8:   </ul>
+9: </div>
+
+    app/views/layouts/_header.html.erb:7
+    app/views/layouts/application.html.erb:10
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-09 14:42:36) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-09 14:42:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (undefined method `lable' for #<ActionView::Helpers::FormBuilder:0xb6c3d7f8>) on line #4 of app/views/sessions/new.html.erb:
+1: <h2>Sign in</h2>
+2: <% form_for(:session, :url => sessions_path) do |f| %>
+3:   <div class="field">
+4:     <%= f.lable :email %> <br />
+5:     <%= f.text_fild :email %>
+6:   </div>
+7: 
+
+    app/views/sessions/new.html.erb:4
+    app/views/sessions/new.html.erb:2
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (23.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-09 14:43:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (undefined method `text_fild' for #<ActionView::Helpers::FormBuilder:0xb707c65c>) on line #5 of app/views/sessions/new.html.erb:
+2: <% form_for(:session, :url => sessions_path) do |f| %>
+3:   <div class="field">
+4:     <%= f.label :email %> <br />
+5:     <%= f.text_fild :email %>
+6:   </div>
+7: 
+8:   <div class="field">
+
+    app/views/sessions/new.html.erb:5
+    app/views/sessions/new.html.erb:2
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-09 14:43:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-09 14:43:59) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-08-09 14:44:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-09 14:44:11) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "controller"=>"users", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [4;36;1mUser Exists (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 17ms (View: 4, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-09 14:44:14) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-09 14:44:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-09 14:47:06) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"user-1@rails.com"}, "action"=>"create", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "controller"=>"sessions"}
+
+ActionView::MissingTemplate (Missing template sessions/create.erb in view path app/views):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-09 14:50:15) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"user-1@rails.com"}, "action"=>"create", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-09 18:07:44) [GET]
+
+ActionController::MethodNotAllowed (Only post requests are allowed.):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (15.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-09 18:07:50) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-09 18:07:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-09 18:07:54) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-09 18:08:16) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"user-1@rails.com"}, "action"=>"create", "authenticity_token"=>"+rwrBcIY0GCDojxUEBeOM+FSIQDS1qG9IZld2L8y0oQ=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user-1@rails.com') LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template sessions/create.erb in view path app/views):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100802103057)
+Migrating to AddEmailUniquenessIndex (20100803112140)
+Migrating to AddPasswordToUsers (20100804092916)
+Migrating to AddSaltToUser (20100804121719)
+Migrating to AddRememberTokenToUsers (20100809144043)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mALTER TABLE "users" ADD "remember_token" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100809144043')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_remember_token')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (89.5ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "remember_token" varchar(255)) [0m
+  [4;35;1mSQL (76.9ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (76.4ms)[0m   [0;1mCREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (74.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (85.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100809144043')[0m
+  [4;35;1mSQL (55.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100803112140')[0m
+  [4;36;1mSQL (44.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100804092916')[0m
+  [4;35;1mSQL (42.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100804121719')[0m
+  [4;36;1mSQL (42.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100802103057')[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-16 16:33:04) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+
+ActionView::TemplateError (undefined local variable or method `logo' for #<ActionView::Base:0xb6e141e4>) on line #2 of app/views/layouts/_header.html.erb:
+1: <div id="header" class="round">
+2:   <%= link_to logo, root_path %>
+3:   <ul class="navigation">
+4:     <li><%= link_to "Home", root_path %></li>
+5:     <% if signed_in? %>
+
+    app/views/layouts/_header.html.erb:2
+    app/views/layouts/application.html.erb:10
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.9ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-16 16:33:09) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+
+ActionView::TemplateError (undefined local variable or method `logo' for #<ActionView::Base:0xb71034b8>) on line #2 of app/views/layouts/_header.html.erb:
+1: <div id="header" class="round">
+2:   <%= link_to logo, root_path %>
+3:   <ul class="navigation">
+4:     <li><%= link_to "Home", root_path %></li>
+5:     <% if signed_in? %>
+
+    app/views/layouts/_header.html.erb:2
+    app/views/layouts/application.html.erb:10
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-16 16:35:39) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (6.8ms)
+Rendered layouts/_myfooter (0.3ms)
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-08-16 16:35:51) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-16 16:36:02) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 35ms (View: 34, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-16 16:36:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-16 16:36:14) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"user-1@rails.com"}, "action"=>"create", "authenticity_token"=>"9p8D4maRnqCOt2QB2BAo95OwphEfRNDkm9CeQtz5iGE=", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user-1@rails.com') LIMIT 1[0m
+  [4;35;1mUser Update (52.2ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-08-16 12:06:14', "remember_token" = '571c75560aac7402d0cf2cc45f4dc7be0d77ebd6985d458f5e0d78504506490c' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/users/1
+Completed in 93ms (DB: 52) | 302 Found [http://localhost/sessions]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-16 16:36:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '571c75560aac7402d0cf2cc45f4dc7be0d77ebd6985d458f5e0d78504506490c') LIMIT 1[0m
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 27ms (View: 10, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-16 16:36:25) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '571c75560aac7402d0cf2cc45f4dc7be0d77ebd6985d458f5e0d78504506490c') LIMIT 1[0m
+Rendered layouts/_header (4.6ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-16 16:36:28) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '571c75560aac7402d0cf2cc45f4dc7be0d77ebd6985d458f5e0d78504506490c') LIMIT 1[0m
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-16 16:36:33) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '571c75560aac7402d0cf2cc45f4dc7be0d77ebd6985d458f5e0d78504506490c') LIMIT 1[0m
+Rendered layouts/_header (4.4ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-08-16 16:36:36) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '571c75560aac7402d0cf2cc45f4dc7be0d77ebd6985d458f5e0d78504506490c') LIMIT 1[0m
+Rendered layouts/_header (4.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-16 16:36:39) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '571c75560aac7402d0cf2cc45f4dc7be0d77ebd6985d458f5e0d78504506490c') LIMIT 1[0m
+Rendered layouts/_header (4.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-16 16:36:41) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '571c75560aac7402d0cf2cc45f4dc7be0d77ebd6985d458f5e0d78504506490c') LIMIT 1[0m
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 37ms (View: 3, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-16 16:36:52) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"9p8D4maRnqCOt2QB2BAo95OwphEfRNDkm9CeQtz5iGE=", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-16 16:36:52) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-16 16:41:15) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-16 16:41:22) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"user-1@rails.com"}, "action"=>"create", "authenticity_token"=>"9p8D4maRnqCOt2QB2BAo95OwphEfRNDkm9CeQtz5iGE=", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user-1@rails.com') LIMIT 1[0m
+  [4;35;1mUser Update (45.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-08-16 12:11:22', "remember_token" = 'df0a3b606beabd9eaead1cf334371892eaccd9c45131ccd1650142e7a9bc3299' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/users/1
+Completed in 53ms (DB: 46) | 302 Found [http://localhost/sessions]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-16 16:41:22) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'df0a3b606beabd9eaead1cf334371892eaccd9c45131ccd1650142e7a9bc3299') LIMIT 1[0m
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-16 16:41:33) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'df0a3b606beabd9eaead1cf334371892eaccd9c45131ccd1650142e7a9bc3299') LIMIT 1[0m
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 33ms (View: 28, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-16 16:41:41) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"9p8D4maRnqCOt2QB2BAo95OwphEfRNDkm9CeQtz5iGE=", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-16 16:41:41) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-16 16:41:42) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-16 16:41:56) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"user-2@rails.com"}, "action"=>"create", "authenticity_token"=>"9p8D4maRnqCOt2QB2BAo95OwphEfRNDkm9CeQtz5iGE=", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user-2@rails.com') LIMIT 1[0m
+  [4;35;1mUser Update (60.6ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-08-16 12:11:56', "remember_token" = 'b69cbb60cb9c23cad02a299e274f05eed6f9d956acd14617a4284419e893388c' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/users/2
+Completed in 68ms (DB: 61) | 302 Found [http://localhost/sessions]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-16 16:41:56) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"users"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'b69cbb60cb9c23cad02a299e274f05eed6f9d956acd14617a4284419e893388c') LIMIT 1[0m
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/users/2]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-16 16:42:23) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'b69cbb60cb9c23cad02a299e274f05eed6f9d956acd14617a4284419e893388c') LIMIT 1[0m
+Rendered layouts/_header (4.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-16 16:43:29) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_myfooter (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]

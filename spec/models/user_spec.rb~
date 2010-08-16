@@ -11,7 +11,7 @@ describe User do
   end
 
   it "should create a new instance given valid attributes" do
-    User.create!(@attr)
+    User.create(@attr)
   end
   
   it "should require a name" do
@@ -77,6 +77,7 @@ describe User do
   end
   
   describe "password encryption" do
+    
     before (:each) do
       new_user={
       :name => "user_name-1",
@@ -108,4 +109,41 @@ describe User do
     
   end
   
+  describe "authenticate method" do
+    it "should return nil on email/password mismatch." do
+      wrong_password_user=User.authenticate(@attr[:email],"some_wrong_password")
+      wrong_password_user.should be_nil
+    end
+    it "should return nil for an email address with no user" do
+      nonexistent_user=User.authenticate("nouser@noserver.com",@attr[:password])
+      nonexistent_user.should be_nil
+    end
+    
+    it "should return the user on email/password match" do
+      matching_user=User.authenticate(@attr[:email],@attr[:password])
+      matching_user.should==@user
+    end
+    
+    
+  end
+
+  describe "remember me" do
+    before(:each) do
+      @user=User.create!(@attr)
+    end
+    
+    it "should have a remember token" do
+      @user.should response_to(:remember_token)
+    end
+    
+    it "should have a remember_me! method" do
+      @user.should response_to(:remember_me!)
+    end
+    
+    it "should set the remember token" do
+      @user.remember_me!
+      @user.remember_token.should_not be_nil
+    end
+    
+  end
 end

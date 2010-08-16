@@ -27,11 +27,17 @@ class User < ActiveRecord::Base
   #password validations
   validates_presence_of :password
   validates_length_of :password, :within => 6..40
+  before_save :encrypt_password
   
   
   # Return true if the user's password matches the submitted password.
   def has_password?(submited_password)
     encrypted_password==encrypt(submited_password)
+  end
+  
+  def remember_me!
+    self.remember_token=encrypt("#{salt}--#{id}--#{Time.now.utc}")
+    save_without_validation
   end
   
   def self.authenticate(email,submited_password)
@@ -40,9 +46,8 @@ class User < ActiveRecord::Base
     return user if user.has_password?(submited_password)
   end
   
-  before_save :encrypt_password
   
-  
+  private
   def encrypt_password
     self.salt=make_salt
     self.encrypted_password=encrypt(password)

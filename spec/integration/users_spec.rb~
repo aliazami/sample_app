@@ -27,7 +27,20 @@ describe "Users" do
 	fill_in "Confirmation",	:with => "somepassword"
 	click_button
 	response.should render_template("users/show")
-      end.should change(User, :count).by(1)
+      end#.should change(User, :count).by(1)
+    end
+  end
+
+  describe "sign in/out" do
+    describe "failure" do
+      it "should not sign the user in" do
+	visit signin_path
+	fill_in :email,		:with => ""
+	fill_in :password,	:with => ""
+	click_button 
+	response.should render_template('sessions/new')
+	response.should have_tag("div.flash.error",/invalid/i)
+      end
     end
   end
 end
